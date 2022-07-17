@@ -1,8 +1,8 @@
 # ConfigureDefender
 
-A small utility for configuring Windows Defender.
+A small utility for configuring Windows Defender Antivirus.
 
-ConfigureDefender is a small GUI application to view and configure important Defender settings.
+ConfigureDefender is a small GUI application to view and configure important Defender Antivirus settings.
 It uses PowerShell cmdlets (with a few exceptions) to change Windows Defender settings.
 Furthermore the user can apply one of three pre-defined protection levels: DEFAULT, HIGH, INTERACTIVE, and MAX.
 Changing one of the protection levels requires a reboot in order to take effect.
@@ -39,7 +39,7 @@ Such a setup is not recommended in the business environment.
  
 ### For Advanced Users
 
-Windows Defender settings are stored in the Windows Registry
+Windows Defender Antivirus settings are stored in the Windows Registry
 and most of them are not available form Windows Defender Security Center.
 
 They can be managed via
@@ -48,9 +48,9 @@ They can be managed via
 - Direct via Registry editing: manually, via `*.reg` files or scripts
 - PowerShell cmdlets: set-mppreference, add-mppreference, remove-mppreference, PowerShell 5.0
  
-#### Windows Defender Registry Keys
+#### Windows Defender Antivirus Registry Keys
 
-Normally Windows Defender stores most settings under this key, owned by SYSTEM.
+Normally Windows Defender Antivirus stores most settings under this key, owned by SYSTEM.
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender`
 
@@ -59,7 +59,7 @@ The registry keys can be changed while using Defender Security Center or PowerSh
 #### Group Policy Management Console (GPO)
 
 Administrators can use Windows Group Policy Management Console (GPO) utility
-to override certain Windows Defender registry values.
+to override certain Windows Defender Antivirus registry values.
 Group Policy settings are stored under another key, owned by ADMINISTRATORS.
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
